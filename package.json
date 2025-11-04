@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:pages": "vite build --base=/portfolio/",
-    "postbuild": "node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
-    "preview": "vite preview",
-    "deploy": "npm run build:pages && gh-pages -d dist -t true"
+    "build:pages": "vite build --base=/portfolio-nps/",
+    "make-404": "node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "deploy": "npm run build:pages && npm run make-404 && gh-pages -d dist -t true"
   },
   "dependencies": {
     "react": "^19.1.1",
