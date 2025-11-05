@@ -37,23 +37,24 @@ export default function Home(){
       </section>
 
       {/* A PROPOS */}
-      <section id="about" className="section">
-        <h2>À propos</h2>
-        <div className="card section-alt">
-          <p>
-          Je viens du terrain : d’abord <strong>conducteur de ligne</strong>, puis <strong>technicien amélioration continue</strong> et enfin <strong>gestionnaire logistique</strong>.
-          Ce parcours m’a appris à <strong>structurer</strong>, <strong>mesurer</strong> et <strong>améliorer en continu</strong>, avec une vraie <strong>culture du résultat</strong>.
-          J’aime <strong>analyser un flux</strong>, identifier les <strong>points de friction</strong> et mettre en place des <strong>solutions simples et robustes</strong>.
-          <strong> Autonome</strong>, je sais <strong>prioriser</strong> et avancer sans supervision constante, tout en gardant le <strong>sens du collectif</strong>.
-          On me dit <strong>à l’aise à l’oral et à l’écrit</strong>, ce qui m’aide à embarquer les équipes et à <strong>documenter clairement</strong>.
-          <strong> Passionné d’informatique</strong> depuis des années, j’ai choisi de me spécialiser en <strong>développement web</strong>.
-          Aujourd’hui, je conçois des interfaces <strong>claires</strong>, <strong>rapides</strong> et <strong>accessibles</strong>.
-          Mes pages sont pensées <strong>mobile responsive</strong>, <strong>SEO-friendly</strong> et optimisées pour la <strong>performance</strong>.
-          J’accorde une attention particulière à l’<strong>accessibilité</strong> (<strong>sémantique</strong>, <strong>focus</strong>, <strong>contrastes</strong>) pour que chaque utilisateur compte.
-          En bref, je combine <strong>rigueur industrielle</strong> et <strong>curiosité tech</strong> pour livrer des front-ends <strong>fiables</strong>, <strong>élégants</strong> et <strong>utiles</strong>.
-          </p>
-        </div>
-      </section>
+<section id="about" className="section">
+  <h2>À propos</h2>
+  <div className="card section-alt about">
+    <p>
+      Je viens du terrain : d’abord <span className="blue-about">conducteur de ligne</span>, puis <span className="blue-about">technicien amélioration continue</span> et enfin <span className="blue-about">gestionnaire logistique</span>.
+      Ce parcours m’a appris à <span className="blue-about">structurer</span>, <span className="blue-about">mesurer</span> et <span className="blue-about">améliorer en continu</span>, avec une vraie <span className="blue-about">culture du résultat</span>.
+      J’aime <span className="blue-about">analyser un flux</span>, identifier les <span className="blue-about">points de friction</span> et mettre en place des <span className="blue-about">solutions simples et robustes</span>.
+      <span className="blue-about"> Autonome</span>, je sais <span className="blue-about">prioriser</span> et avancer sans supervision constante, tout en gardant le <span className="blue-about">sens du collectif</span>.
+      On me dit <span className="blue-about">à l’aise à l’oral et à l’écrit</span>, ce qui m’aide à embarquer les équipes et à <span className="blue-about">documenter clairement</span>.
+      <span className="blue-about"> Passionné d’informatique</span> depuis des années, j’ai choisi de me spécialiser en <span className="blue-about">développement web</span>.
+      Aujourd’hui, je conçois des interfaces <span className="blue-about">claires</span>, <span className="blue-about">rapides</span> et <span className="blue-about">accessibles</span>.
+      Mes pages sont pensées <span className="blue-about">mobile responsive</span>, <span className="blue-about">SEO-friendly</span> et optimisées pour la <span className="blue-about">performance</span>.
+      J’accorde une attention particulière à l’<span className="blue-about">accessibilité</span> (<span className="blue-about">sémantique</span>, <span className="blue-about">focus</span>, <span className="blue-about">contrastes</span>) pour que chaque utilisateur compte.
+      En bref, je combine <span className="blue-about">rigueur industrielle</span> et <span className="blue-about">curiosité tech</span> pour livrer des front-ends <span className="blue-about">fiables</span>, <span className="blue-about">élégants</span> et <span className="blue-about">utiles</span>.
+    </p>
+  </div>
+</section>
+
 
       {/* COMPÉTENCES */}
       <section id="skills" className="section">

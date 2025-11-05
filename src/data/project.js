@@ -23,7 +23,7 @@ tags: ['SEO','Performance'],
 stack: ['Lighthouse','WebP','Lazy-loading'],
 summary: 'Optimisations SEO/perf : images WebP, lazy, metas, schémas.',
 cover: nina,
-links: { github: 'https://github.com/Nelson-Paris/SEO-Nina-OCR', demo: '#' },
+links: { github: 'https://github.com/Nelson-Paris/SEO-Nina-OCR', demo: 'https://nelson-paris.github.io/SEO-Nina-OCR/' },
 },
 {
 id: 3,
