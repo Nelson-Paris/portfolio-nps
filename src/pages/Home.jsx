@@ -3,7 +3,7 @@ import { projects } from '../data/project'
 import profil from '../assets/profil.jpg'
 import { skillCategories } from '../data/skills'
 
-export default function Home(){
+export default function Home() {
   return (
     <>
 
@@ -25,7 +25,7 @@ export default function Home(){
         <div className="section-alt card hero-visual">
           <img
             src={profil}
-            alt="Aperçu de mes projets et interfaces"
+            alt="Aperçu du visage d'un jeune développeur web"
             className="hero-img"
             width="600"
             height="450"
@@ -37,23 +37,23 @@ export default function Home(){
       </section>
 
       {/* A PROPOS */}
-<section id="about" className="section">
-  <h2>À propos</h2>
-  <div className="card section-alt about">
-    <p>
-      Je viens du terrain : d’abord <span className="blue-about">conducteur de ligne</span>, puis <span className="blue-about">technicien amélioration continue</span> et enfin <span className="blue-about">gestionnaire logistique</span>.
-      Ce parcours m’a appris à <span className="blue-about">structurer</span>, <span className="blue-about">mesurer</span> et <span className="blue-about">améliorer en continu</span>, avec une vraie <span className="blue-about">culture du résultat</span>.
-      J’aime <span className="blue-about">analyser un flux</span>, identifier les <span className="blue-about">points de friction</span> et mettre en place des <span className="blue-about">solutions simples et robustes</span>.
-      <span className="blue-about"> Autonome</span>, je sais <span className="blue-about">prioriser</span> et avancer sans supervision constante, tout en gardant le <span className="blue-about">sens du collectif</span>.
-      On me dit <span className="blue-about">à l’aise à l’oral et à l’écrit</span>, ce qui m’aide à embarquer les équipes et à <span className="blue-about">documenter clairement</span>.
-      <span className="blue-about"> Passionné d’informatique</span> depuis des années, j’ai choisi de me spécialiser en <span className="blue-about">développement web</span>.
-      Aujourd’hui, je conçois des interfaces <span className="blue-about">claires</span>, <span className="blue-about">rapides</span> et <span className="blue-about">accessibles</span>.
-      Mes pages sont pensées <span className="blue-about">mobile responsive</span>, <span className="blue-about">SEO-friendly</span> et optimisées pour la <span className="blue-about">performance</span>.
-      J’accorde une attention particulière à l’<span className="blue-about">accessibilité</span> (<span className="blue-about">sémantique</span>, <span className="blue-about">focus</span>, <span className="blue-about">contrastes</span>) pour que chaque utilisateur compte.
-      En bref, je combine <span className="blue-about">rigueur industrielle</span> et <span className="blue-about">curiosité tech</span> pour livrer des front-ends <span className="blue-about">fiables</span>, <span className="blue-about">élégants</span> et <span className="blue-about">utiles</span>.
-    </p>
-  </div>
-</section>
+      <section id="about" className="section">
+        <h2>À propos</h2>
+        <div className="card section-alt about">
+          <p>
+            Je viens du terrain : d’abord <span className="blue-about">conducteur de ligne</span>, puis <span className="blue-about">technicien amélioration continue</span> et enfin <span className="blue-about">gestionnaire logistique</span>.
+            Ce parcours m’a appris à <span className="blue-about">structurer</span>, <span className="blue-about">mesurer</span> et <span className="blue-about">améliorer en continu</span>, avec une vraie <span className="blue-about">culture du résultat</span>.
+            J’aime <span className="blue-about">analyser un flux</span>, identifier les <span className="blue-about">points de friction</span> et mettre en place des <span className="blue-about">solutions simples et robustes</span>.
+            <span className="blue-about"> Autonome</span>, je sais <span className="blue-about">prioriser</span> et avancer sans supervision constante, tout en gardant le <span className="blue-about">sens du collectif</span>.
+            On me dit <span className="blue-about">à l’aise à l’oral et à l’écrit</span>, ce qui m’aide à embarquer les équipes et à <span className="blue-about">documenter clairement</span>.
+            <span className="blue-about"> Passionné d’informatique</span> depuis des années, j’ai choisi de me spécialiser en <span className="blue-about">développement web</span>.
+            Aujourd’hui, je conçois des interfaces <span className="blue-about">claires</span>, <span className="blue-about">rapides</span> et <span className="blue-about">accessibles</span>.
+            Mes pages sont pensées <span className="blue-about">mobile responsive</span>, <span className="blue-about">SEO-friendly</span> et optimisées pour la <span className="blue-about">performance</span>.
+            J’accorde une attention particulière à l’<span className="blue-about">accessibilité</span> (<span className="blue-about">sémantique</span>, <span className="blue-about">focus</span>, <span className="blue-about">contrastes</span>) pour que chaque utilisateur compte.
+            En bref, je combine <span className="blue-about">rigueur industrielle</span> et <span className="blue-about">curiosité tech</span> pour livrer des front-ends <span className="blue-about">fiables</span>, <span className="blue-about">élégants</span> et <span className="blue-about">utiles</span>.
+          </p>
+        </div>
+      </section>
 
 
       {/* COMPÉTENCES */}
@@ -61,8 +61,8 @@ export default function Home(){
         <h2>Compétences</h2>
 
         <div className="accordion">
-          {skillCategories.map((cat, i) => (
-            <details key={cat.id} className="collapse" {...(i === 0 ? { open: true } : {})}>
+          {skillCategories.map((cat) => (
+            <details key={cat.id} className="collapse">
               <summary>
                 <span className="collapse-title"><strong>{cat.title}</strong></span>
                 <span className="chevron" aria-hidden="true" />
@@ -75,7 +75,7 @@ export default function Home(){
                     <li key={s.name} className="skill-chip">
                       <div className="skill-head">
                         <span className="skill-name">{s.name}</span>
-                       
+
                       </div>
                       {s.keywords?.length > 0 && (
                         <small className="skill-tags">{s.keywords.join(' • ')}</small>
@@ -97,7 +97,7 @@ export default function Home(){
           {projects.map(p => (
             <article key={p.id} className="card">
               <div className="project-header">
-                <h3 style={{marginTop:0}}>{p.title}</h3>
+                <h3 style={{ marginTop: 0 }}>{p.title}</h3>
                 <small className="project-year">{p.year}</small>
               </div>
 
@@ -112,9 +112,25 @@ export default function Home(){
                 />
               )}
 
-              <p className="project-meta">{(p.stack||[]).join(' · ')}</p>
+              <p className="project-meta">{(p.stack || []).join(' · ')}</p>
               <p>{p.summary}</p>
-
+              {p.details && (
+                <details className="collapse" style={{ marginTop: '.5rem' }}>
+                  <summary><span className="collapse-title"><strong>En savoir plus</strong></span><span className="chevron" /></summary>
+                  <div className="collapse-content">
+                    <p className="resume"><strong>Contexte :</strong> {p.details.contexte}</p>
+                    <p className="project-meta"><strong>Stack :</strong> {(p.stack || []).join(' · ')}</p>
+                    <h4>Enjeux</h4>
+                    <ul className="bullets">{p.details.enjeux.map((x, i) => <li key={i}>{x}</li>)}</ul>
+                    <h4>Réalisations</h4>
+                    <ul className="bullets">{p.details.realisations.map((x, i) => <li key={i}>{x}</li>)}</ul>
+                    <h4>Résultats</h4>
+                    <ul className="bullets">{p.details.resultats.map((x, i) => <li key={i}>{x}</li>)}</ul>
+                    <h4>Axes d’amélioration</h4>
+                    <ul className="bullets">{p.details.axes.map((x, i) => <li key={i}>{x}</li>)}</ul>
+                  </div>
+                </details>
+              )}
               <div className="card-actions">
                 {p.links?.demo && (
                   p.links.demo.startsWith('/')
@@ -229,7 +245,7 @@ export default function Home(){
           </details>
 
           {/* Formations */}
-          <details className="collapse">
+          <details className="collapse" open>
             <summary>
               <span className="collapse-title"><strong>Formations</strong></span>
               <span className="chevron" aria-hidden="true" />
@@ -237,7 +253,7 @@ export default function Home(){
             <div className="collapse-content">
               <article className="card">
                 <strong>2025 — Développeur informatique</strong> (RNCP 38415) · OpenClassrooms
-                <ul className="bullets" style={{marginTop:'.5rem'}}>
+                <ul className="bullets" style={{ marginTop: '.5rem' }}>
                   <li>Projets : Booki (HTML/CSS), Nina Carducci (SEO/Perf), Kasa (React/Vite/Sass).</li>
                   <li>Compétences : HTML, CSS, JavaScript, React, Vite, Sass, SEO, Perf, Git/GitHub.</li>
                 </ul>
@@ -245,7 +261,7 @@ export default function Home(){
 
               <article className="card">
                 <strong>2021–2022 — Licence Pro Gestion de la Performance Industrielle</strong> · IUT Blois
-                <ul className="bullets" style={{marginTop:'.5rem'}}>
+                <ul className="bullets" style={{ marginTop: '.5rem' }}>
                   <li>Lean, VSM, PDCA, 5S, pilotage d’indicateurs & amélioration continue.</li>
                 </ul>
               </article>
