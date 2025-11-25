@@ -159,56 +159,56 @@ Chaque `git push` sur `main` déclenche un déploiement.
 ## JSON
 
 - Gestion des "projects"
- {
-    id: ,
-    title: 'Titre du projet',
-    year: Année de création,
-    tags: exemple : ['Front-end','HTML/CSS','Responsive'],
-    stack: exemple : ['HTML5','CSS3'],
-    summary: 'introduction rapide',
-    cover: ajout de la cover sans le nom de l'extension exemple "project",
-    alt: 'Page projet "xxxx"',
-    links: {
-      github: 'https://github.com/Nelson-Paris/project',
-      demo: 'lien du site'
-    },
-    details: {
-      contexte:
-        "contextextualiser le projet",
-      enjeux: [
-        "Enjeux 1",
-        "Enjeux 2",
-        "Enjeux etc"
-      ],
-      realisations: [
-        "présentation des différentes réalisations",
-        "réalisation 2",
-        "réalisation 3",
-        "réalisation etc"
-      ],
-      resultats: [
-        "résultat 1",
-        "résultat 2"
-      ],
-      axes: [
-        "future amélioration 1",
-        "future amélioration 2",
-        "future amélioration 3"
-      ]
-    }
-  },  
-  
+- {
+-    id: ,
+-    title: 'Titre du projet',
+-    year: Année de création,
+-    tags: exemple : ['Front-end','HTML/CSS','Responsive'],
+-    stack: exemple : ['HTML5','CSS3'],
+-    summary: 'introduction rapide',
+-    cover: ajout de la cover sans le nom de l'extension exemple "project",
+-    alt: 'Page projet "xxxx"',
+-    links: {
+-      github: 'https://github.com/Nelson-Paris/project',
+-      demo: 'lien du site'
+-    },
+-    details: {
+-      contexte:
+-        "contextextualiser le projet",
+-      enjeux: [
+-        "Enjeux 1",
+-        "Enjeux 2",
+-        "Enjeux etc"
+-      ],
+-      realisations: [
+-        "présentation des différentes réalisations",
+-        "réalisation 2",
+-        "réalisation 3",
+-        "réalisation etc"
+-      ],
+-     resultats: [
+-        "résultat 1",
+-        "résultat 2"
+-      ],
+-      axes: [
+-        "future amélioration 1",
+-        "future amélioration 2",
+-        "future amélioration 3"
+-      ]
+-    }
+-  },  
+
 - Gestion des "skills"
-  {
-    id: 'catégorie',
-    title: 'titre',
-    description:
-      "élements qui ont permis l'apprentissage et l'amélioration des skills",
-    skills: [
-      { name: 'nom du skill 1', level: x/5, keywords: ['listings des compétences, .. ,..'] },
-      { name: 'nom du skill 2', level: x/5, keywords: ['listings des compétences, .. ,..'] },
-      { name: 'nom du skill 3', level: x/5, keywords: ['listings des compétences, .. ,..'] },
-    ],
+-  {
+-    id: 'catégorie',
+-    title: 'titre',
+-    description:
+-      "élements qui ont permis l'apprentissage et l'amélioration des skills",
+-    skills: [
+-      { name: 'nom du skill 1', level: x/5, keywords: ['listings des compétences, .. ,..'] },
+-      { name: 'nom du skill 2', level: x/5, keywords: ['listings des compétences, .. ,..'] },
+-      { name: 'nom du skill 3', level: x/5, keywords: ['listings des compétences, .. ,..'] },
+-    ],
 
     level: x/5 pour le moment pas encore déployer car attente d'une meilleur connaissances de dev pour donner un niveau objectif.
   },
