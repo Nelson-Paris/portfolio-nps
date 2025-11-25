@@ -157,8 +157,6 @@ Chaque `git push` sur `main` déclenche un déploiement.
 - [ ] Lighthouse CI & budgets images
 
 ## JSON
-<details>
-
 
 - Gestion des "projects"
 -  id: ,
@@ -181,7 +179,7 @@ Chaque `git push` sur `main` déclenche un déploiement.
 -    axes: ["future amélioration 1", "future amélioration 2", "future amélioration 3"]
 
 
-// Gestion des "skills"
+- Gestion des "skills"
 
 -  id: 'catégorie',
 -  title: 'titre',
