@@ -158,60 +158,61 @@ Chaque `git push` sur `main` déclenche un déploiement.
 
 ## JSON
 
-- Gestion des "projects"
-- {
--    id: ,
--    title: 'Titre du projet',
--    year: Année de création,
--    tags: exemple : ['Front-end','HTML/CSS','Responsive'],
--    stack: exemple : ['HTML5','CSS3'],
--    summary: 'introduction rapide',
--    cover: ajout de la cover sans le nom de l'extension exemple "project",
--    alt: 'Page projet "xxxx"',
--    links: {
--      github: 'https://github.com/Nelson-Paris/project',
--      demo: 'lien du site'
--    },
--    details: {
--      contexte:
--        "contextextualiser le projet",
--      enjeux: [
--        "Enjeux 1",
--        "Enjeux 2",
--        "Enjeux etc"
--      ],
--      realisations: [
--        "présentation des différentes réalisations",
--        "réalisation 2",
--        "réalisation 3",
--        "réalisation etc"
--      ],
--     resultats: [
--        "résultat 1",
--        "résultat 2"
--      ],
--      axes: [
--        "future amélioration 1",
--        "future amélioration 2",
--        "future amélioration 3"
--      ]
--    }
--  },  
+// Gestion des "projects"
 
-- Gestion des "skills"
--  {
--    id: 'catégorie',
--    title: 'titre',
--    description:
--      "élements qui ont permis l'apprentissage et l'amélioration des skills",
--    skills: [
--      { name: 'nom du skill 1', level: x/5, keywords: ['listings des compétences, .. ,..'] },
--      { name: 'nom du skill 2', level: x/5, keywords: ['listings des compétences, .. ,..'] },
--      { name: 'nom du skill 3', level: x/5, keywords: ['listings des compétences, .. ,..'] },
--    ],
-
-    level: x/5 pour le moment pas encore déployer car attente d'une meilleur connaissances de dev pour donner un niveau objectif.
+ {
+  id: 1,
+  title: 'Titre du projet',
+  year: 2024,                         // année de création
+  tags: ['Front-end', 'HTML/CSS', 'Responsive'],
+  stack: ['HTML5', 'CSS3'],
+  summary: 'Introduction rapide du projet',
+  cover: 'project',                   // nom du fichier SANS extension (ex: "booki")
+  alt: 'Page projet "Titre"',
+  links: {
+    github: 'https://github.com/Nelson-Paris/project',
+    demo: 'https://exemple.com'
   },
+  details: {
+    contexte: 'Contextualiser le projet en quelques phrases.',
+    enjeux: [
+      'Enjeu 1',
+      'Enjeu 2',
+      'Enjeu …'
+    ],
+    realisations: [
+      'Réalisation 1',
+      'Réalisation 2',
+      'Réalisation …'
+    ],
+    resultats: [
+      'Résultat 1',
+      'Résultat 2'
+    ],
+    axes: [
+      'Amélioration future 1',
+      'Amélioration future 2',
+      'Amélioration future 3'
+    ]
+  }
+}
+  
+// Gestion des "skills"
+
+{
+  id: 'frontend',                     // identifiant unique de la catégorie
+  title: 'Front-End',
+  description:
+    "Éléments ayant permis l'apprentissage et l'amélioration des compétences.",
+  skills: [
+    { name: 'HTML5', level: 4, keywords: ['sémantique', 'landmarks'] },
+    { name: 'CSS3 / Sass', level: 4, keywords: ['responsive', 'Grid', 'Flex'] },
+    { name: 'JavaScript', level: 3, keywords: ['modules', 'async/await'] }
+  ],
+
+  // level : entier de 1 à 5 (optionnel pour l’instant).
+  // Il sera renseigné plus tard pour refléter un niveau objectif.
+}
 
 
 
